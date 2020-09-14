@@ -4,7 +4,7 @@
 $header-font-family: 'Playfair Display', serif;
 $header-font-weight: 800;
 $body-font-family: 'Source Sans Pro', sans-serif;
-$body-font-color: #2C2222;
+$body-font-color: #3b3b3b;
 $accent-color: #FAFF00;
 
 
@@ -111,7 +111,7 @@ i {
   width: 100%;
 }
 
-.social-icons i{
+.social-icons i {
   padding: 0 5px 0 5px;
 }
 
@@ -145,6 +145,7 @@ i {
   font-size: 3em;
   margin-bottom: -65px;
 }
+
 .section-title:after {
   mix-blend-mode: difference;
 }
@@ -155,6 +156,20 @@ i {
 
 .yellow-text {
   color: $accent-color;
+}
+
+.footer {
+  margin-top: 50px;
+  padding: 20px 0 20px 0;
+  background-color: $body-font-color;
+  color: white;
+  color: rgba(255, 255, 255, 0.5);
+
+}
+
+.footer a {
+  color: white;
+  color: rgba(255, 255, 255, 0.5);
 }
 
 
