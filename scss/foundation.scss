@@ -66,11 +66,18 @@ $accent-color: #FAFF00;
 @include foundation-visibility-classes;
 // @include foundation-prototype-classes;
 
+.background1 {
+  position: fixed;
+  opacity: 0.5;
+  z-index: -99;
+}
+
 .hero {
   background-image: url("/images/background.jpeg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  padding-bottom: 10px;
 }
 
 .hero h1 {
@@ -95,3 +102,60 @@ i {
   color: white;
   line-height: 0;
 }
+
+.top-menu {
+  margin-top: 150px;
+}
+
+.social-icons {
+  width: 100%;
+}
+
+.social-icons i{
+  padding: 0 5px 0 5px;
+}
+
+.intro-text {
+  margin-top: 20px;
+}
+
+#productie-left {
+  background-image: url("/images/productie.jpeg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding-bottom: 10px;
+}
+
+#choreografie-rechts {
+  background-image: url("/images/choreograaf.jpeg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding-bottom: 10px;
+}
+
+#content p {
+  padding: 0 10px 20px 10px;
+}
+
+.section-title {
+  position: relative;
+  text-align: center;
+  font-size: 3em;
+  margin-bottom: -65px;
+}
+.section-title:after {
+  mix-blend-mode: difference;
+}
+
+.text-padding-top {
+  padding-top: 75px;
+}
+
+.yellow-text {
+  color: $accent-color;
+}
+
+
+
