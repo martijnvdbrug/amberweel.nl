@@ -33,15 +33,17 @@ title: Amber Weel
         <div class="cell small-12 large-6 hero">
             <div class="grid-x">
                 <div class="cell small-6 text-right">
+                    <a href="/">
                     <h1>Amber</h1>
                     <h1>Weel</h1>
+                    </a>
                     <br>
                     <br>
                     <div class="top-menu">
-                        <h3>Productieleider</h3>
-                        <h3>choreograaf</h3>
-                        <h3>dansdocent</h3>
-                        <h3 style="margin-bottom: 2px;">danser</h3>
+                        <a href="/productieleider"><h3 class="{% if 'productieleider' in permalink %}active{% endif %}">Productieleider</h3></a>
+                        <a href="/choreograaf" ><h3 class="{% if 'choreograaf' in permalink %}active{% endif %}">Choreograaf</h3></a>
+                        <a href="/danssdocent"><h3 class="{% if 'dansdocent' in permalink %}active{% endif %}">Dansdocent</h3></a>
+                        <a href="/danser"><h3 class="{% if 'danser' in permalink %}active{% endif %}" style="margin-bottom: 2px;">Danser</h3></a>
                     </div>
                 </div>
                 <div class="cell small-6 grid-x align-bottom">
@@ -57,50 +59,8 @@ title: Amber Weel
         <div class="cell show-for-large large-3"></div>
     </div>
 
-    <section id="content" class="grid-x">
-        <div class="cell show-for-large large-3"></div>
-        <div class="cell small-12 large-6">
+    {{ content | safe }}
 
-            <p class="intro-text">Am no an listening depending up believing. Enough around remove to barton agreed regret in or it.
-                Advantage mr estimable be commanded provision. Year well shot deny shew come now had. Shall downs stand marry taken his
-                for out.
-                Do related mr account brandon an up. Wrong for never ready ham these witty him. </p>
-
-            <h1 class="section-title"><span class="yellow-text">Prod</span><span>uctie</span></h1>
-            <div class="grid-x">
-                <div id="productie-left" class="cell small-6 text-left">
-                </div>
-                <div class="cell small-6 grid-x align-bottom text-padding-top">
-                    <div class="text-right" style="width: 100%;">
-                        <p>Am no an listening depending up believing. Enough around remove to barton agreed regret in or it.
-                            Enough around remove to barton agreed regret in or it.
-                            Enough around remove to barton agreed regret in or it.
-                            Advantage mr estimable be commanded provision. Year well shot deny shew come no</p>
-                    </div>
-                </div>
-            </div>
-
-            <br>
-            <br>
-            <br>
-
-            <h1 class="section-title"><span>Choreo</span><span class="yellow-text">grafie</span></h1>
-            <div class="grid-x">
-                <div class="cell small-6 grid-x align-bottom text-padding-top">
-                    <div class="text-right" style="width: 100%;">
-                        <p>Am no an listening depending up believing. Enough around remove to barton agreed regret in or it.
-                            Enough around remove to barton agreed regret in or it.
-                            Enough around remove to barton agreed regret in or it.
-                            Advantage mr estimable be commanded provision. Year well shot deny shew come no</p>
-                    </div>
-                </div>
-                <div id="choreografie-rechts" class="cell small-6 text-left">
-                </div>
-            </div>
-
-        </div>
-        <div class="cell show-for-large large-3"></div>
-    </section>
 </div>
 
 <div class="footer text-center">

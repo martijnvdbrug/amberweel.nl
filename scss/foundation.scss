@@ -93,6 +93,10 @@ $accent-color: #FAFF00;
   font-size: 1.3rem;
 }
 
+.active {
+  color: $accent-color !important;
+}
+
 .filler {
   height: 100%;
 }
@@ -119,16 +123,7 @@ i {
   margin-top: 20px;
 }
 
-#productie-left {
-  background-image: url("/images/productie.jpeg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  padding-bottom: 10px;
-}
-
-#choreografie-rechts {
-  background-image: url("/images/choreograaf.jpeg");
+.section-image {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -164,7 +159,6 @@ i {
   background-color: $body-font-color;
   color: white;
   color: rgba(255, 255, 255, 0.5);
-
 }
 
 .footer a {
@@ -172,5 +166,8 @@ i {
   color: rgba(255, 255, 255, 0.5);
 }
 
+.min-height-block {
+  min-height: 300px;
+}
 
 
