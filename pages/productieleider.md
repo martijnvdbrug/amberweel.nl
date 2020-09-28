@@ -2,8 +2,6 @@
 layout: layouts/sub-page
 permalink: /productieleider/
 ---
-![Kip](/assets/uploads/avatar.png "Test")
-
 # Project uno
 
 Am no an listening depending up believing. Enough around remove to barton agreed regret in or it.
