@@ -131,7 +131,7 @@ i {
 }
 
 #content p {
-  padding: 0 10px 20px 10px;
+  padding: 0 10px 30px 10px;
 }
 
 .section-title {
@@ -141,8 +141,12 @@ i {
   margin-bottom: -65px;
 }
 
-.section-title:after {
-  mix-blend-mode: difference;
+#project h1  {
+  font-size: 3em;
+}
+
+#project img  {
+  padding-top: 20px;
 }
 
 .text-padding-top {
@@ -168,6 +172,10 @@ i {
 
 .min-height-block {
   min-height: 300px;
+}
+
+.extra-padding {
+  padding: 30px;
 }
 
 
