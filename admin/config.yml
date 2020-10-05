@@ -7,8 +7,25 @@ site_url: https://amberweel.netlify.com
 media_folder: assets/uploads
 
 collections: # A list of collections the CMS should be able to edit
+  - name: 'Home' # Used in routes, ie.: /admin/collections/:slug/edit
+    editor:
+      preview: false
+    label: 'Home' # Used in the UI
+    label_singular: 'Home' # Used in the UI, ie: "New Post"
+    extension: html
+    description: >
+      Hier kun je de inhoud van de Home pagina bewerken
+    folder: 'pages'
+    # slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    # ummary: '{{title}} -- {{year}}/{{month}}/{{day}}'
+    create: false # Allow users to create new documents in this collection
+    delete: false
+    fields: # The fields each document in this collection have
+      - { label: 'Title', title: 'title', name: 'title', widget: 'string', hint: 'Dit is de titel vanhet tablad in de browser'}
+      - { label: 'Intro', title: 'intro', name: 'body', widget: 'text' }
   - name: 'pages' # Used in routes, ie.: /admin/collections/:slug/edit
-    title: 'Paginas'
+    editor:
+      preview: false
     label: 'Paginas' # Used in the UI
     label_singular: 'Pagina' # Used in the UI, ie: "New Post"
     description: >
@@ -18,31 +35,6 @@ collections: # A list of collections the CMS should be able to edit
     # ummary: '{{title}} -- {{year}}/{{month}}/{{day}}'
     create: false # Allow users to create new documents in this collection
     delete: false
-#    view_filters:
-#      - label: Posts With Index
-#        field: title
-#        pattern: 'This is post #'
-#      - label: Posts Without Index
-#        field: title
-#        pattern: front matter post
-#      - label: Drafts
-#        field: draft
-#        pattern: true
     fields: # The fields each document in this collection have
-#      - { label: 'Title', name: 'title', widget: 'string', tagname: 'h1' }
-#      - { label: 'Draft', name: 'draft', widget: 'boolean', default: false }
-#      - {
-#        label: 'Publish Date',
-#        name: 'date',
-#        widget: 'datetime',
-#        date_format: 'YYYY-MM-DD',
-#        time_format: 'HH:mm',
-#        format: 'YYYY-MM-DD HH:mm',
-#      }
-#      - label: 'Cover Image'
-#        name: 'image'
-#        widget: 'image'
-#        required: false
-#        tagname: ''
-
-      - { label: 'Body', name: 'body', widget: 'markdown', hint: 'Dit is de inhoud van de pagina' }
+      - { label: 'Title', title: 'title', name: 'title', widget: 'string'}
+      - { label: 'Content', title: 'Content', name: 'body', widget: 'markdown', hint: 'Dit is de inhoud van de pagina' }
