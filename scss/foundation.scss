@@ -131,7 +131,7 @@ i {
 }
 
 #content p {
-  padding: 0 10px 30px 10px;
+  padding: 0 10px 0 10px;
 }
 
 .section-title {
@@ -147,6 +147,7 @@ i {
 
 #project img  {
   padding-top: 20px;
+  width: 100%;
 }
 
 .text-padding-top {
@@ -176,6 +177,10 @@ i {
 
 .extra-padding {
   padding: 30px;
+}
+
+.home-section {
+  padding-bottom: 50px;
 }
 
 

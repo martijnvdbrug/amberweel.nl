@@ -34,32 +34,34 @@ title: Amber Weel
             <div class="grid-x">
                 <div class="cell small-6 text-right">
                     <a href="/">
-                    <h1>Amber</h1>
-                    <h1>Weel</h1>
+                        <h1>Amber</h1>
+                        <h1>Weel</h1>
                     </a>
                     <br>
                     <br>
                     <div class="top-menu">
-                        <a href="/productieleider"><h3 class="{% if 'productieleider' in permalink %}active{% endif %}">Productieleider</h3></a>
-                        <a href="/choreograaf" ><h3 class="{% if 'choreograaf' in permalink %}active{% endif %}">Choreograaf</h3></a>
+                        <a href="/productieleider"><h3 class="{% if 'productieleider' in permalink %}active{% endif %}">Productieleider</h3>
+                        </a>
+                        <a href="/choreograaf"><h3 class="{% if 'choreograaf' in permalink %}active{% endif %}">Choreograaf</h3></a>
                         <a href="/danssdocent"><h3 class="{% if 'dansdocent' in permalink %}active{% endif %}">Dansdocent</h3></a>
-                        <a href="/danser"><h3 class="{% if 'danser' in permalink %}active{% endif %}" style="margin-bottom: 2px;">Danser</h3></a>
+                        <a href="/danser"><h3 class="{% if 'danser' in permalink %}active{% endif %}" style="margin-bottom: 2px;">
+                            Danser</h3></a>
                     </div>
                 </div>
                 <div class="cell small-6 grid-x align-bottom">
                     <div class="text-right social-icons">
-                        <i class="fi-mail"></i>
-                        <i class="fi-social-instagram"></i>
-                        <i class="fi-social-facebook"></i>
-                        <i class="fi-social-linkedin"></i>
-                    </div>
+                        <a href="mailto:amberweel@gmail.com" target="_blank"><i class="fi-mail"></i></a>
+                    <a href="https://www.instagram.com/amberjoyweel" target="_blank"><i class="fi-social-instagram"></i></a>
+                    <a href="https://www.facebook.com/amberjoy.weel" target="_blank"><i class="fi-social-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/amber-weel-b227a561" target="_blank"><i class="fi-social-linkedin"></i></a>
                 </div>
             </div>
         </div>
-        <div class="cell show-for-large large-3"></div>
     </div>
+    <div class="cell show-for-large large-3"></div>
+</div>
 
-    {{ content | safe }}
+{{ content | safe }}
 
 </div>
 
