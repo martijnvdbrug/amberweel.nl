@@ -8,6 +8,7 @@ media_folder: assets/uploads
 
 collections: # A list of collections the CMS should be able to edit
   - name: 'pages' # Used in routes, ie.: /admin/collections/:slug/edit
+    title: 'Paginas'
     label: 'Paginas' # Used in the UI
     label_singular: 'Pagina' # Used in the UI, ie: "New Post"
     description: >
