@@ -22,7 +22,11 @@ collections: # A list of collections the CMS should be able to edit
     delete: false
     fields: # The fields each document in this collection have
       - { label: 'Title', title: 'title', name: 'title', widget: 'string', hint: 'Dit is de titel vanhet tablad in de browser'}
-      - { label: 'Intro', title: 'intro', name: 'body', widget: 'text' }
+      - { label: 'Intro', title: 'intro', name: 'intro', widget: 'text' }
+      - { label: 'Productie', title: 'Productie', name: 'productie', widget: 'text' }
+      - { label: 'Choreograaf', title: 'Choreograaf', name: 'choreograaf', widget: 'text' }
+      - { label: 'Dansdocent', title: 'Dansdocent', name: 'dansdocent', widget: 'text' }
+      - { label: 'Danser', title: 'Danser', name: 'danser', widget: 'text' }
   - name: 'pages' # Used in routes, ie.: /admin/collections/:slug/edit
     editor:
       preview: false
