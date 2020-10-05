@@ -1,6 +1,7 @@
 ---
 layout: layouts/sub-page
 permalink: /productieleider/
+title: Productieleider
 ---
 # Project uno
 
