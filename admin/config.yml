@@ -1,6 +1,6 @@
 backend:
-  name: github
-  repo: martijnvdbrug/amberweel.nl
+  name: git-gateway
+  # repo: martijnvdbrug/amberweel.nl
 
 site_url: https://amberweel.netlify.com
 
